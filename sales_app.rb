@@ -8,7 +8,7 @@ class SalesApp
   IMPORT_TAX = 0.05 # 5% additional sales tax on all imported goods
   EXCLUDED_PRODUCTS = /book|chocolate|headache pills/i
 
-  def run(input)
+  def get_receipt(input)
     total       = 0.0
     sales_taxes = 0.0
     receipt     = ""

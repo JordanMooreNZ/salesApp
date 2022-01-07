@@ -2,8 +2,8 @@ require "./sales_app"
 
 describe SalesApp do
 
-  describe ".run" do
-    subject { described_class.new.run(input) }
+  describe "#get_receipt" do
+    subject { described_class.new.get_receipt(input) }
 
     shared_examples "an accurate receipt" do
       it "should match the expected output" do
